@@ -1,7 +1,7 @@
 const toggler = document.getElementById('navbar-toggler');const navbarNav = document.getElementById('navbarNav');
 toggler.addEventListener('click', () => {
 navbarNav.classList.toggle('show');
-toggler.innerHTML = navbarNav.classList.contains('show') ? '<span class="navbar-toggler-icon lni lni-close"></span>' : '<span class="navbar-toggler-icon lni lni-menu"></span>';});
+toggler.innerHTML = navbarNav.classList.contains('show') ? '<span class="lni lni-close"></span>' : '<span class="navbar-toggler-icon"></span>';});
     
 document.querySelectorAll('.dropdown-submenu > a').forEach(link => {
     link.addEventListener('click', function(e) {
