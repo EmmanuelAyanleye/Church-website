@@ -1,0 +1,468 @@
+body {
+  background-color: #111;
+  color: #fff;
+  font-family: "poppins";
+}
+
+.navbar {
+  background-color: #000;
+}
+
+.navbar-brand img {
+  height: 40px;
+}
+
+.navbar-nav {
+  gap: 1rem;
+}
+
+.dropdown-menu {
+  background-color: #191919 !important;
+  border: none;
+}
+
+.nav-item .nav-link {
+  text-transform: uppercase;
+}
+
+.dropdown-menu a {
+  color: #f0a500;
+}
+
+.dropdown-menu a:hover {
+  color: #000000;
+}
+
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  display: none;
+}
+
+.dropdown-submenu:hover .dropdown-menu {
+  display: block;
+}
+
+@media (max-width: 991.98px) {
+  .dropdown-submenu .dropdown-menu {
+    position: static;
+    display: none;
+    margin-top: 0;
+  }
+
+  .dropdown-submenu .dropdown-menu.show {
+    display: block;
+  }
+
+  .navbar-toggler-icon {
+    color: #fff;
+    font-size: 24px;
+  }
+}
+
+/* CAROUSEL (HERO - SECTION) */
+.carousel {
+  position: relative;
+}
+.carousel-item {
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+}
+.carousel-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 0 15px;
+}
+.carousel-overlay p {
+  font-size: 1.5rem;
+  margin-bottom: 0.3rem;
+}
+.carousel-overlay h1 {
+  color: #f0a500;
+  font-weight: bold;
+  font-size: 5rem;
+  margin-bottom: 0.5rem;
+}
+.service-time {
+  font-size: 1.3rem;
+  margin: 1rem 0;
+}
+.watch-btn {
+  background-color: #fff;
+  color: #111;
+  padding: 0.7rem 1.4rem;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+.watch-btn i {
+  color: red !important;
+  font-size: 1.3rem;
+}
+
+.service-time i {
+  margin-right: 0.5rem;
+}
+.navbar-collapse {
+  margin-right: 1.5rem;
+}
+
+/* Custom carousel indicators */
+.custom-indicators {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  z-index: 10;
+  padding: 10px 0;
+}
+.custom-indicator {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 2px solid #f0a500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.custom-indicator.active {
+  background-color: #f0a500;
+  transform: scale(1.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .carousel-item {
+    height: 60vh;
+  }
+  .carousel-overlay h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .carousel-overlay p {
+    font-size: 1rem;
+  }
+  .watch-btn {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-item {
+    height: 50vh;
+  }
+  .carousel-overlay h1 {
+    font-size: 2rem;
+  }
+}
+
+/* ABOUT US SECTION */
+.church-section {
+  padding: 6rem 15px;
+}
+
+.church-title {
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.church-text {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #555;
+}
+
+.church-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  object-fit: cover;
+}
+
+.church-image:hover {
+  transform: scale(1.05); /* Slight zoom */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* More shadow on hover */
+}
+
+.btn-see-more {
+  background-color: #000;
+  color: #f0a500;
+  padding: 10px 25px;
+  border-radius: 10px;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-see-more:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+@media (max-width: 767.98px) {
+  .church-section .row {
+    gap: 1.5rem !important;
+  }
+
+  .church-section .col-md-6 {
+    margin-bottom: 1rem;
+  }
+}
+
+/* WATCH SERMONS */
+.watch-sermon {
+  background-color: #e1e1e1;
+}
+
+.watch-sermon .container {
+  padding: 4rem 0;
+}
+
+.sermon-card {
+  border-radius: 15px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.sermon-card:hover {
+  transform: scale(1.02);
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.pagination a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.pagination a.active {
+  color: red;
+}
+
+.pagination i {
+  font-size: 12px;
+}
+
+.pagination a>i{
+  background-color: #000000;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .sermon-card {
+      margin-bottom: 20px;
+  }
+}
+
+
+/* PROGRAMME SECTION */
+.programme-section {
+  margin-block: 6rem;
+}
+
+.programme-card {
+  border-radius: 15px;
+  color: #fff;
+  padding: 15px 20px 35px 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s;
+}
+
+.programme-card:hover {
+  transform: translateY(-5px);
+}
+
+.programme-icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.programme-date {
+  font-size: 5rem;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.programme-month {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.programme-title {
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+.btn-seemore {
+  border: 3px solid #f0a500 !important;
+  color: #f0a500 !important;
+  border-radius: 10px !important;
+  padding: 10px 25px !important;
+  font-weight: bold !important;
+  transition: all 0.3s;
+  margin-top: 3rem;
+}
+
+.btn-seemore:hover {
+  background-color: #f0a500 !important;
+  color: white !important;
+}
+
+/* BOOK SECTION */
+.section-container {
+  background-color: #e1e1e1;
+  padding: 4rem 1rem;
+}
+
+.book-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 1rem;
+}
+
+.highlight-title {
+  font-weight: bold;
+  color: #f0a500;
+}
+
+.right-border-title {
+  text-align: center;
+  color: #f0a500;
+  font-weight: 600 !important;
+  font-size: 1.2rem;
+}
+
+.col-md-4>hr{
+  color: #f0a500;
+  font-weight: 800;
+  border: 1.5px solid #f0a500;
+}
+
+.profile-img {
+  border-radius: 15px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.author-info {
+  font-weight: bold;
+}
+
+.author-subtitle {
+  font-style: italic;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+
+/* CONTACT SECTION */
+.contact-section {
+  padding: 4rem 1rem;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+  padding-left: 2.5rem !important;
+}
+
+.form-group i {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
+  color: #f0a500;
+  font-size: 1rem;
+}
+
+.form-control {
+  padding-left: 2.5rem;
+  border: 2px solid #f0a500;
+  border-radius: 12px;
+  box-shadow: none;
+}
+
+.form-control:focus {
+  border-color: #f0a500;
+  box-shadow: 0 0 0 0.15rem rgba(240, 165, 0, 0.25);
+}
+
+textarea.form-control {
+  padding-top: 1rem;
+}
+
+.contact-box {
+  background-color: #D9D9D9;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 0 15px rgba(0,0,0,0.05);
+}
+
+.contact-info i {
+  color: #f0a500;
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+}
+
+.btn-custom {
+  background-color: #f0a500 !important;
+  color: #fff !important;
+  border-radius: 14px;
+  padding: 0.75rem 1.5rem !important;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  transition: all 0.3s ease !important;
+}
+
+.btn-custom:hover {
+  background-color: #d99400;
+}
