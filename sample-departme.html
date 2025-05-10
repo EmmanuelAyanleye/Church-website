@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About our church</title>
+    <title>Singles Department</title>
     <link rel="stylesheet" href="css/style.css" />
     <script defer src="js/script.js"></script>
     <!-- CDN LINKS -->
@@ -37,14 +37,14 @@
               <ul class="navbar-nav ms-auto">
                   <li class="nav-item"><a class="nav-link" aria-current="page" href="index.html">Home</a></li>
                   <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">About</a>
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">About</a>
                     <ul class="dropdown-menu">
                       <li><a class="dropdown-item" href="aboutchurch.html">Our Church</a></li>
                       <li><a class="dropdown-item" href="aboutpastor.html">Our Pastor</a></li>
                     </ul>
                   </li>
                   <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Departments</a>
+                    <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">Departments</a>
                     <ul class="dropdown-menu">
                       <li><a class="dropdown-item" href="childrens.html">Children's Department</a></li>
                       <li><a class="dropdown-item" href="singles.html">Singles Department</a></li>
@@ -156,123 +156,90 @@
   </header>
 
     <!-- HERO SECTION -->
-    <div class="hero-section  mt-5 pt-3">
-      <div id="churchCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active" style="background-image: url('images/ca1.png')">
-            <div class="carousel-overlay">
-              <p>Welcome to</p>
-              <h1>HOUSEHOLD OF GOD CHURCH</h1>
-              <p>
-                Join us in worship, experience God's presence, and grow in
-                faith.
-              </p>
-              <p class="service-time">
-                <i class="fa-regular fa-calendar-days"></i> Sunday: 9 AM & 11 AM
-                – Lagos, Nigeria
-              </p>
-              <a href="#" class="watch-btn"
-                ><i class="fa fa-video"></i> Watch Live</a
-              >
-            </div>
-          </div>
-          <div
-            class="carousel-item"
-            style="background-image: url('images/ca3.png')"
-          >
-            <div class="carousel-overlay">
-              <p>Experience</p>
-              <h1>GOD'S LOVE</h1>
-              <p>
-                Come as you are and encounter the transforming power of God.
-              </p>
-              <p class="service-time">
-                <i class="fa-regular fa-calendar-days"></i> Wednesday Bible
-                Study: 6 PM
-              </p>
-              <a href="#" class="watch-btn"
-                ><i class="fa-solid fa-video"></i> Watch Live</a
-              >
-            </div>
-          </div>
-          <div
-            class="carousel-item"
-            style="background-image: url('images/Rectangle\ 4.png')"
-          >
-            <div class="carousel-overlay">
-              <p>Join Our</p>
-              <h1>COMMUNITY</h1>
-              <p>Find your place in our growing family of believers.</p>
-              <p class="service-time">
-                <i class="fa-regular fa-calendar-days"></i> Friday Prayer: 6 PM
-              </p>
-              <a href="#" class="watch-btn"
-                ><i class="fa-solid fa-video"></i> Watch Live</a
-              >
-            </div>
+     <div class="hero-section mt-5 pt-3">
+    <div id="churchCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" style="background-image: url('images/ca1.png');">
+          <div class="carousel-overlay">
+            <h1>SINGLES DEPARTMENT</h1>
+            <p>Join us in worship, experience God's presence, and grow in faith.</p>
           </div>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#churchCarousel"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#churchCarousel"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-
-        <!-- Custom indicators -->
-        <div class="custom-indicators">
-          <div
-            class="custom-indicator active"
-            data-bs-target="#churchCarousel"
-            data-bs-slide-to="0"
-          ></div>
-          <div
-            class="custom-indicator"
-            data-bs-target="#churchCarousel"
-            data-bs-slide-to="1"
-          ></div>
-          <div
-            class="custom-indicator"
-            data-bs-target="#churchCarousel"
-            data-bs-slide-to="2"
-          ></div>
+        <div class="carousel-item" style="background-image: url('images/ca3.png');">
+          <div class="carousel-overlay">
+            <h1>SINGLES DEPARTMENT</h1>
+            <p>Come as you are and encounter the transforming power of God.</p>
+          </div>
         </div>
+        <div class="carousel-item" style="background-image: url('images/Rectangle\ 4.png');">
+          <div class="carousel-overlay">
+            <h1>SINGLES DEPARTMENT</h1>
+            <p>Find your place in our growing family of believers.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#churchCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#churchCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+      
+      <!-- Custom indicators -->
+      <div class="custom-indicators">
+        <div class="custom-indicator active" data-bs-target="#churchCarousel" data-bs-slide-to="0"></div>
+        <div class="custom-indicator" data-bs-target="#churchCarousel" data-bs-slide-to="1"></div>
+        <div class="custom-indicator" data-bs-target="#churchCarousel" data-bs-slide-to="2"></div>
       </div>
     </div>
+  </div>
 
-    <!-- ABOUT CHURCH SECTION -->
+    <!-- THE DEPARTMENT -->
     <div class="container church-section">
-    <div class="row align-items-stretch church-row">
-      <div class="col-md-5 d-flex">
-        <div class="w-100 h-100">
-          <img src="images/ca1.png" alt="Church Building" class="church-image h-100 w-100 object-fit-cover rounded">
-        </div>
-      </div>
+      <h2 class="church-title pb-4 text-center">SINGLES DEPARTMENT</h2>
+      <div class="row align-items-stretch church-row">
+        <div class="col-md-5 hod-section align-items-center justify-content-center d-flex">
+        <h2>Meet Our Head of Department</h2>
+        <img src="images/pastor.jpg" alt="Head of Department" class="mb-4">
+          <h2>Bro. Mike Mogo</h2>
+        <p>The Department was formed in 1987, shortly after the inception of the church and the Head of Singles Department is Bro Mike Mogo.</p>
+       <a href="mailto:singles@householdofgodchurch.org">singles@householdofgodchurch.org</a></p>
+    </div>
+      
       <div class="col-md-6 d-flex">
-        <div class="d-flex flex-column justify-content-center w-100">
-          <h2 class="church-title">The Household Of God International Ministries</h2>
+        <div class="">
           <p class="church-text">
-            The young ministry had its inaugural Sunday morning service on the 1st of February, 1987 in his living room, then in the Ikeja area of Lagos state. As membership of the young but peculiar church grew into the hundreds and thousands, the surrounding grounds of his house became sitting area for the overspill from the living room. The ministry of the church and the person of Reverend Chris Okotie as a minister of the gospel became nationally recognized when the Lord Jesus Christ inspired the inauguration of the GRACE PROGRAMME and the television ministry, APOKALUPSIS.
+            The singles fellowship is a department within the Household of God structure and a veritable channel for singles to maximize their potentials as peculiar single people in Nigeria.
+
+            Membership is open to church members who are not married and are above 18years. No further qualifications are needed, widows and widowers are welcome. 
+            <br><br>
+            They hold meetings mostly at preannounced weekends for specific programs which provide entertainment, sporting activities and sometimes relevant relationship information peculiar to singles. Through these programs on relationship, brothers and sisters relationships within a household is extended and reinforced beyond the formality of regular church service.
+            <br><br>
+            Past programmes include Village Forum, Battle of the Sexes, Household Olympics, Boat Cruises and Parties. Our vision is to maximize our potentials and underlying operational principles are creativity, decency, and orderliness based exclusively on the word of God.
           </p>
         </div>
       </div>
     </div>
     
-      <p class="church-text mt-4">The charity driven GRACE programme was instituted in 1990 and has become a major benevolence channel of the ministry on an annual basis. The objective of the programme as directed by the Lord Jesus is to extend the arm of care and sharing to the less privileged in the society through recognized non governmental organizations who deal directly with such people. In 1996 the KARIS AWARD, yet another inspiration by the Lord Jesus, which is aimed at appreciating Nigerians who have positively impacted the nation but have not been recognized by the government, was instituted and subsumed into the GRACE programme.
+      <p class="church-text mt-4">
         </p>
-  </div>
+
+        <div class="col-md-5 d-flex">
+        <div class="w-100 h-100">
+          <!-- <img src="images/ca1.png" alt="Church Building" class="church-image h-100 w-100 object-fit-cover rounded"> -->
+        </div>
+      </div>
+      
+    <!-- <div class="container hod-section">
+        <h2>Meet Our Head of Department</h2>
+        <img src="images/pastor.jpg" alt="Head of Department" class="mb-4">
+        <p>The Department was formed in 1987, shortly after the inception of the church and the Head of Singles Department is Bro Mike Mogo.</p>
+        <p><strong>E-Mail:</strong> <a href="mailto:singles@householdofgodchurch.org">singles@householdofgodchurch.org</a></p>
+    </div> -->
+    </div>
+     
 
     <!-- FOOTER SECTION -->
     <footer class="footer text-white">
